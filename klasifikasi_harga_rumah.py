@@ -44,7 +44,7 @@ model_reg = LinearRegression()
 model_reg.fit(X_train_reg, y_train_reg)
 
 # Aplikasi Streamlit
-st.title("Klasifikasi dan Prediksi Harga Properti")
+st.title("Klasifikasi dan Prediksi Harga Rumah")
 
 # Input dari pengguna
 st.subheader("Masukkan Detail Properti")
@@ -68,5 +68,5 @@ if st.button("Prediksi"):
     
     # Menampilkan hasil prediksi
     st.subheader("Hasil Prediksi")
-    st.write(f"Properti ini termasuk kategori **{kategori}**.")
-    st.write(f"Prediksi harga properti: **Rp {prediksi_harga:,.0f}**.")
+    st.write(f"Harga Rumah ini termasuk kategori **{kategori}**.")
+    st.write(f"Prediksi harga : **Rp {prediksi_harga:,.0f}**.")
